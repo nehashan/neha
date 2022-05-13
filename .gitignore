@@ -1,32 +1,18 @@
-# Prerequisites
-*.d
+#include<iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
 
-# Precompiled Headers
-*.gch
-*.pch
+    int age;
+    cout << "Enter age of a user:";
+    cin>>age;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+    if (age >= 18) {
+        cout << "You are eligible for voting";
+    } else {
+        cout << "You are not eligible for voting";
+    }
 
-# Fortran module files
-*.mod
-*.smod
+    return 0;
+}
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
